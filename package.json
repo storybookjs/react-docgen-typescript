@@ -7,7 +7,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "auto": "auto",
+    "release": "auto shipit",
     "precommit": "lint-staged",
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
@@ -27,6 +27,7 @@
     "typescript": ">= 4.3.x"
   },
   "devDependencies": {
+    "auto": "^10.43.0",
     "@types/chai": "^4.1.0",
     "@types/lodash": "^4.14.137",
     "@types/mocha": "^5.2.5",
