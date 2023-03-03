@@ -1,12 +1,13 @@
 {
-  "name": "react-docgen-typescript",
+  "name": "@storybook/react-docgen-typescript",
   "version": "2.2.3",
   "description": "",
-  "homepage": "https://github.com/styleguidist/react-docgen-typescript/",
-  "bugs": "https://github.com/styleguidist/react-docgen-typescript/issues",
+  "homepage": "https://github.com/storybookjs/react-docgen-typescript/",
+  "bugs": "https://github.com/storybookjs/react-docgen-typescript/issues",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "release": "auto shipit",
     "precommit": "lint-staged",
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
@@ -26,6 +27,7 @@
     "typescript": ">= 4.3.x"
   },
   "devDependencies": {
+    "auto": "^10.43.0",
     "@types/chai": "^4.1.0",
     "@types/lodash": "^4.14.137",
     "@types/mocha": "^5.2.5",
@@ -52,6 +54,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/styleguidist/react-docgen-typescript.git"
+    "url": "https://github.com/storybookjs/react-docgen-typescript.git"
+  },
+  "author": "storybookbot <storybookbot@gmail.com>",
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
