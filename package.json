@@ -7,6 +7,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "auto": "auto",
     "precommit": "lint-staged",
     "tsc": "tsc",
     "tsc:watch": "tsc -w",
